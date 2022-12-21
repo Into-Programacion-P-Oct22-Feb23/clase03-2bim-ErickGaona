@@ -25,7 +25,7 @@ public class Ejemplo01 {
                 System.out.printf("%d\t", arreglo1[i][j]);
             }
             System.out.println(); // salto de línea
-        }
+        }//presnetar datos tal como esta
         
         System.out.println("Ingreso de datos al arreglo");
         for (int i = 0; i < arreglo1.length; i++) {
@@ -44,7 +44,8 @@ public class Ejemplo01 {
                 System.out.printf("%d\t", arreglo1[i][j]);
             }
             System.out.println(); // salto de línea
-        }
+        }//presentar valores del arreglo ya agregados datos10
+        
 
     }
 }

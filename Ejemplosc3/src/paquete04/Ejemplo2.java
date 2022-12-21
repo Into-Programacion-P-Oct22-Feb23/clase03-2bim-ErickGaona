@@ -16,13 +16,31 @@ public class Ejemplo2 {
      */
     public static void main(String[] args) {
         // Creación de arreglo bidimensionales
-        
-        double[][] dato1 = {{1, 2, 3},{6, 8, 9}}; //
+        double[][] result = new double[2][3];
+        double[][] dato1 = {{1, 2, 3}, {6, 8, 9}}; //
         /*
             1   4   3
             36  64  9
-        */
-        
+         */
+        for (int i = 0; i < dato1.length; i++) {
+            for (int j = 0; j < dato1[i].length; j++) {
+                if (dato1[i][j] % 2 == 0) {
+                    result[i][j] = dato1[i][j] * dato1[i][j];
+                } else {
+                    result[i][j] = dato1[i][j];
+
+                }
+
+            }
+
+        }
+        for (int i = 0; i < dato1.length; i++) {
+            for (int j = 0; j < dato1[i].length; j++) {
+                System.out.printf("%s\t",result[i][j]);
+                //System.out.println(result[i][j]);
+            }
+             System.out.println();
+        }
     }
-    
+
 }
